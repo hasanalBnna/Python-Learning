@@ -13,6 +13,8 @@ L_name = input("Yes,my lname is : ")
 print("may i know your age, please?")
 age = input("Yes,my age is : ")
 #user_input =input("What is your name?")
-d ="my name is {} {} \nand i am {} years old".format(F_name,L_name,age)
+d ="my name is {fname} {lname} \ni am {ag} years old".format(fname=F_name,ag=age,lname=L_name)
 print(d)
+e = f"my name is {F_name} {L_name} and i am {age} years old"
+print(e)
 
