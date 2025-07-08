@@ -33,3 +33,22 @@ def myfuc():
     print("I love ", fruits)
 
 myfuc()
+
+#local and Global veriable
+c1 = "Good" #Global
+
+def test():
+    c1 = "Awasome" #local
+    print("Python is ",c1) #local
+
+test()
+print("Python was",c1) #Global
+
+# global keyword
+d1 = "fantastic"
+
+def mytest():
+    global d1
+    d1 = "Awasome"
+mytest()
+print(d1)
