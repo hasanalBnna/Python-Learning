@@ -18,3 +18,9 @@ print(text.isalnum())
 #check if all characters are alphanumeric
 print(text.isalpha())
 
+sentence = "this is a sample sentance"
+print(sentence.title())
+
+sen = "  hello world  "
+print(sen.strip().upper())
+
