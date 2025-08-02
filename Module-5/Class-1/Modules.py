@@ -19,7 +19,10 @@
 
 # ghorer_dim.expence.expence()
 
-# 
-import ghorer_dim.hatir_dim.nothing
+# if u have .py file into a folder, u must tell the import (folder).(.py file) then import will understand which file u want.
+# import ghorer_dim.hatir_dim.nothing
+# print(ghorer_dim.hatir_dim.nothing.a)
 
-print(ghorer_dim.hatir_dim.nothing.a)
+# 
+import ghorer_dim
+print(ghorer_dim.hello)
