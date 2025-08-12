@@ -1,0 +1,93 @@
+Overview:
+
+Write a Python program that allows the user to play a number guessing game with two options:
+
+ Let the computer choose a random number, and the user guesses it.
+
+ Let the user choose a number, and the computer tries to guess it.
+
+🧾 Instructions:
+
+ Use functions to organize your code.
+
+ Use input validation for integer inputs and choice selection.
+
+ Handle invalid inputs gracefully.
+
+ Display a menu with options and run the program until the user chooses to exit.
+
+ You may use the random module for number generation.
+
+Functional Requirements:
+
+Display this menu:
+
+Choose an option:
+
+1. You guess the number (computer selects)
+
+2. Computer guesses your number
+
+3. Exit
+
+Option 1: (You guess)
+
+ Computer randomly selects a number between 1 and 100.
+
+ User tries to guess it. The program gives feedback:
+
+o "Too low", "Too high", or "Correct!"
+
+ Keep asking until the user guesses it correctly.
+
+ Example:
+
+Guess the number (1 to 100): 50
+
+Too high!
+
+Guess again: 25
+
+Too low!
+
+Guess again: 37
+
+Correct! The number was 37.
+
+Option 2: (Computer guesses)
+
+ User thinks of a number between 1 and 100 (input is provided secretly).
+
+ Computer guesses, and user gives feedback:
+
+o "H" for too high
+
+o "L" for too low
+
+o "C" for correct
+
+ Program keeps guessing using binary search strategy.
+
+ Example:
+
+Think of a number between 1 and 100 and enter it (for test): 43
+
+Computer guesses: 50
+
+Your feedback (H/L/C): H
+
+Computer guesses: 25
+
+Your feedback (H/L/C): L
+
+Computer guesses: 43
+
+Your feedback (H/L/C): C
+
+Computer guessed your number in 3 tries!
+
+Option 3: Exit
+
+Display:
+
+Goodluck!
