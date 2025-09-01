@@ -28,21 +28,21 @@ def computer_guesses_number():
     attempts = 0
     
     while True:
-        attempts += 1
+        attempts = attempts + 1
         computer_guess = (low + high) // 2
         print(f"Computer guesses: {computer_guess}")
         
-        feedback = input("Your feedback (H for too high, L for too low, C for correct): ").strip().upper()
+        feedback = input("Your feedback (h for too high, l for too low, c for correct): ").strip().upper()
         
-        if feedback == 'H':
+        if feedback == 'h':
             high = computer_guess - 1
-        elif feedback == 'L':
+        elif feedback == 'l':
             low = computer_guess + 1
-        elif feedback == 'C':
+        elif feedback == 'c':
             print(f"Computer guessed your number in {attempts} tries!")
             break
         else:
-            print("Invalid feedback. Please enter H, L, or C.")
+            print("Invalid feedback. Please enter h, l, or c.")
 
 def display_menu():
     print("\nChoose an option:")
