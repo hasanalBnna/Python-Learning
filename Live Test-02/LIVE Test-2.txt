@@ -1,0 +1,80 @@
+
+1. What is SQL and where is it commonly used?
+
+2. Differentiate between relational and non-relational databases.
+
+3. What is the role of a primary key and a foreign key in a table?
+
+4. Write a simple SQL query to select all columns from a table named students.
+
+5. Which SQL function is used to find the total number of rows in a table?
+
+6. What is the difference between WHERE and HAVING clauses?
+
+7. Explain the purpose of INNER JOIN with an example scenario.
+
+8. What is the use of indexes in SQL? Name two types of indexes.
+
+9. In ER diagrams, what do entities and relationships represent?
+
+10. List the main data types in SQL (at least three examples).
+
+Ans:
+1. What is SQL and where is it commonly used?
+ It is commonly used for querying, updating, and managing data stored in relational database management systems (RDBMS) such as MySQL, PostgreSQL, Oracle, and SQL Server.
+
+2. Differentiate between relational and non-relational databases.
+Relational Databases:
+	1. Fixed schema
+	2. Supports complex joins and relationships
+	3. Structured tables with rows and columns
+	4. MySQL, PostgreSQL, Oracle
+Non-relational Databases:
+	1. Flexible or dynamic schema
+	2. Limited or no support for joins
+	3. Various models: document, key-value, graph, column-family
+	4. MongoDB, Cassandra, Redis
+
+3. What is the role of a primary key and a foreign key in a table?
+Primary Key: 
+	A unique identifier for each record in a table. It ensures that no two rows have the same value in the primary key column.
+Foreign Key: 
+	A field (or collection of fields) in one table that refers to the primary key in another table, establishing a relationship between the two tables.
+
+4. Write a simple SQL query to select all columns from a table named students.
+select * from students;
+
+5. Which SQL function is used to find the total number of rows in a table?
+select count(*) from students;
+
+6. What is the difference between WHERE and HAVING clauses?
+WHERE: 
+	Filters rows before grouping (used with select, update, delete).
+HAVING: 
+	Filters groups after aggregation (used with group by).
+
+7. Explain the purpose of INNER JOIN with an example scenario.
+INNER JOIN returns records that have matching values in both tables.
+
+Example:
+	Suppose you have two tables, students and enrollments. To get a list of students along 	with their enrolled courses, you can use INNER JOIN on the student ID.
+		select students.student_id, students.name, enrollments.course
+		from students
+		INNER JOIN enrollments on students.student_id = enrollments.student_id; 
+
+8. What is the use of indexes in SQL? Name two types of indexes.
+Indexes improve the speed of data retrieval operations on a database table at the cost of additional writes and storage space.
+Two types of indexes:
+	1. B-tree index
+	2. Hash index
+
+9. In ER diagrams, what do entities and relationships represent?
+Entities: 
+	Objects or things in the real world with an independent existence (Student, Course).
+Relationships: 
+	Associations between entities (Student enrolls in Course).
+10. List the main data types in SQL (at least three examples).
+INT (integer numbers)
+VARCHAR (variable character strings)
+DATE (date values)
+
