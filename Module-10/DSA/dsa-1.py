@@ -46,8 +46,19 @@
 # x[1]= "Banana"
 # print (x)
 
-x = ["Abc", 34, "Banna", True, 40, "male"]
-y= [1,2,3,4,5, "Banana"]
-x.extend(y)
-print (x)
+# x = ["Abc", 34, "Banna", True, 40, "male"]
+# y= [1,2,3,4,5, "Banana"]
+# x.extend(y)
+# print (x)
+
+# x = ["Abc", 34, "Banna", True, 40, "male"]
+# x.pop(2)
+# print (x)
+
+
+# x= ["abc", 34, True, 40, "male"]
+# del x[0]
+# print (x)
+
+
 
